@@ -1,3 +1,4 @@
+package binary;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -12,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 public class BinaryTest {
 
     private String input;
-    private int expectedOutput;
+    private Integer expectedOutput;
 
     @Parameters
     public static Collection<Object[]> data() {
@@ -35,7 +36,7 @@ public class BinaryTest {
         });
     }
 
-    public BinaryTest(String input, int expectedOutput) {
+    public BinaryTest(String input, Integer expectedOutput) {
         this.input = input;
         this.expectedOutput = expectedOutput;
     }
