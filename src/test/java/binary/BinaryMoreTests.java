@@ -8,6 +8,13 @@ public class BinaryMoreTests
 {	
 	@Test
 	public void test_constructor_InvalidInputs_NullString_ThrowsException( ) {
-		fail( "Not yet implemented" );
+		try {
+			Binary test = new Binary(null);
+			fail("Supposed to catch NullPointerException");
+		} catch ( NullPointerException npe ) {
+			
+		} catch ( Exception e ) {
+			fail("Expected to catch NullPointerException");
+		}
 	}
 }
