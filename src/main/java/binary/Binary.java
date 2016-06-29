@@ -4,10 +4,18 @@ import exceptions.NotImplementedException;
 
 public class Binary
 {
+	/**
+	 * Takes in a binary string representing some number.
+	 * @param rawInput
+	 */
 	public Binary( String rawInput ) {
 		throw new NotImplementedException();
 	}
 	
+	/**
+	 * Returns an Integer represented by the given binary string.
+	 * @return
+	 */
 	public Integer getDecimal() {
 		throw new NotImplementedException();
 	}
